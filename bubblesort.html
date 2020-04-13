@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bubble Sort</title>
+  <link rel="stylesheet" href="graph.css">
+  <script src="sort.js"></script>
+  <script src="drawchart.js"></script>
+  <script src="sortingAlgorithm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+
+<body>
+  <form><button id="goback" type="submit" formaction="calc.html">Go back</button></form>
+  <canvas id="chart"></canvas>
+  <script>
+    if (checkInput()) {
+      var numbers = getNumberArray();
+      var myChart = drawChart(numbers)
+      bubbleSort(numbers, myChart)
+    }
+    else {
+      window.history.back();
+    }
+
+  </script>
+</body>
+
+</html>

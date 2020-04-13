@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>ArrayManipulator</title>
+      <script src="max.js"></script>
+      <script src="min.js"></script>
+      <script src="rev.js"></script>
+      <script src="sort.js"></script>
+      <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+        <div>
+             <form action="bubblesort.html">
+                 <br>
+                 <h3>Type in a sequence of numbers <br> (example: 1,-2,3,4,2.5,0.005,14847):</h3>
+                 <br>
+                 <input id="textinput" placeholder="Numbers....">
+                 <br>
+                 <br>
+                 <button type="reset">Delete</button>
+                 <br>
+                 <br>
+                 <button onclick="findMax();return false;">Find max</button>
+                 <br>
+                 <br>
+                 <button onclick="findMin();return false;">Find min</button>
+                 <br>
+                 <br>
+                 <input id="bubbleSortButton" type="submit" 
+                 value="Bubble Sort&#10; (WITH ANIMATION)" onclick="passNumbersFromCalc();">
+                 <br>
+                 <br>
+                 <input id="quickSortButton" type="submit" 
+                 value="Quick Sort&#10; (WITH ANIMATION)" onclick="passNumbersFromCalc();" formaction="quicksort.html">
+                 <br>
+                 <br>
+                 <button onclick="reverseArray();return false;">Reverse</button>
+             </form>
+        </div>
+        <script>pasteNumberString()</script>
+      </body>
+</html>
