@@ -14,11 +14,11 @@
              <form action="bubblesort.html">
                  <br>
                  <h3>Type in a sequence of numbers <br> (example: 1,-2,3,4,2.5,0.005,14847):</h3>
-                 <br>
                  <input id="textinput" placeholder="Numbers....">
                  <br>
                  <br>
-                 <button type="reset">Delete</button>
+                 <input id="bubbleSortButton" type="submit" 
+                 value="Bubble Sort&#10; (WITH ANIMATION)" onclick="passNumbersFromCalc();">
                  <br>
                  <br>
                  <button onclick="findMax();return false;">Find max</button>
@@ -27,15 +27,14 @@
                  <button onclick="findMin();return false;">Find min</button>
                  <br>
                  <br>
-                 <input id="bubbleSortButton" type="submit" 
-                 value="Bubble Sort&#10; (WITH ANIMATION)" onclick="passNumbersFromCalc();">
+                 <button onclick="reverseArray();return false;">Reverse</button>
                  <br>
                  <br>
                  <input id="quickSortButton" type="submit" 
                  value="Quick Sort&#10; (WITH ANIMATION)" onclick="passNumbersFromCalc();" formaction="quicksort.html">
                  <br>
                  <br>
-                 <button onclick="reverseArray();return false;">Reverse</button>
+                 <button type="reset">Delete</button>
              </form>
         </div>
         <script>pasteNumberString()</script>
