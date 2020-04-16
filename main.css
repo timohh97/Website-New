@@ -71,6 +71,16 @@ a{
 }
 
 
+#clock
+{
+    font-size: xx-large;
+    background-color: white;
+    font-weight: bolder;
+    width: 120px;
+    margin-left: 100px;
+    border-radius: 15px;
+}
+
 
 
 

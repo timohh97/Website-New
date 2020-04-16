@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="main.css">
     <script src="send.js"></script>
+    <script src ="clock.js"></script>
     <title>Timo Schessl</title>
 </head>
 
 <body>
+    <div id="clock">
+        <script>
+        showTime()
+        setInterval(showTime,1000)
+        
+        </script>
+    </div>
     <div id="maintext">
         <div id="pictureBox">
             <img  id="picture" src="Foto_TimoSchessl.jpg" width= 225 height=300>
