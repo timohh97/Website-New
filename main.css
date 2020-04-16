@@ -83,6 +83,20 @@ a{
     margin-bottom: -20px;
 }
 
+#welcome
+{
+    margin-left: 300px;
+    background-color: black;
+    border-radius: 15px;
+    color:white;
+    width:400px;
+    text-align: center;
+    float: right;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    margin-right: 600px;
+}
+
 
 
 
