@@ -1,1 +1,1 @@
-gsap.from("#mainFrame",{opacity: 0, duration: 3, y:- 100})
+gsap.from("#mainFrame",{opacity: 0, duration: 1, y:- 1000})
