@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="main.css">
-    <script src="send.js"></script>
+    <script src="send-email.js"></script>
     <script src ="clock.js"></script>
     <title>Timo Schessl</title>
 </head>
@@ -45,27 +45,30 @@
             <p>Matlab, Oracle SQL, LaTex</p>
         
     </div>
-    <form id="contactform" onsubmit="return sendMessage();" class="contact">
-        <div style="text-align: center;">
+    <form id="contactform" class="contact" method="POST" action="https://formspree.io/website.ts97@gmail.com">
+        
             <h1>Contact me</h1>
             <br>
-            <input type="text" id="name" maxlength="20" placeholder="Your name" style="border-radius: 15px;">
+            <input name="name" type="text" id="name" maxlength="20" placeholder="Your name" style="border-radius: 15px;">
             <br>
             <br>
-            <input type="text" id="email" maxlength="20" placeholder="Your email" style="border-radius: 15px;">
+            <input name="email" type="text" id="email" maxlength="20" placeholder="Your email" style="border-radius: 15px;">
             <br>
             <br>
-            <input type="text" id="subject" maxlength="20" placeholder="Subject" style="border-radius: 15px;">
+            <input name="subject" type="text" id="subject" maxlength="20" placeholder="Subject" style="border-radius: 15px;">
             <br>
             <br>
-            <textarea id="messageinput" style="resize: none; border-radius: 15px;"
+            <textarea name="message" id="message" style="resize: none; border-radius: 15px;"
                 placeholder="Your message"></textarea>
             <br>
+            <div id="status">
+
+            </div>
             <button type="reset" style="margin-top: 10px; border-radius: 15px;">Delete</button>
             <br>
             <br>
-            <button type="submit" style="margin-bottom: 5px; border-radius: 15px;">Send message</button>
-        </div>
+            <button class="submit" type="submit" style="margin-bottom: 5px; border-radius: 15px;">Send message</button>
+        
     </form>
     
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
