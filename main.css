@@ -15,10 +15,16 @@ body{
     margin-top: 40px;
 }
 
-#messageinput
+#message
 {
     width: 220px;
     height: 150px;
+    font-size: large;
+}
+
+#name, #email, #subject{
+    width: 220px;
+    font-size: large;
 }
 
 button
@@ -34,6 +40,7 @@ button
 {
     float: right; 
     margin-right: 100px;
+    text-align: center;
 }
 
 a{
@@ -99,6 +106,10 @@ a{
 
 h4{
     margin-bottom: -10px;
+}
+
+#status{
+    color:red;
 }
 
 
