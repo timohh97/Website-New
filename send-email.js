@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".submit").click(function (event) {
 
-       alert("hello")
+       
         var name = $("#name").val()
         var email = $("#email").val()
         var subject = $("#subject").val()
@@ -18,16 +18,19 @@ $(document).ready(function () {
                 }
                 else {
                     event.preventDefault()
+                    alert("Please enter at least 15 characters for the message!")
                     status.append("<div>Please enter at least 15 characters for the message!</div>")
                 }
             }
             else {
                 event.preventDefault()
+                alert("Please enter at least 3 characters for the subject!")
                 status.append("<div>Please enter at least 3 characters for the subject!</div>")
             }
         }
         else {
             event.preventDefault()
+            alert("The email is not valid!")
             status.append("<div>The email is not valid!</div>")
         }
     }
@@ -35,6 +38,7 @@ $(document).ready(function () {
     {
        
         event.preventDefault()
+        alert("Please enter your name.")
         status.append("<div>Please enter your name.</div>")
     }
 

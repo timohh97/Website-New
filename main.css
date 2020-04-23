@@ -34,6 +34,7 @@ button
 {
     float: right; 
     margin-right: 100px;
+    text-align: center;
 }
 
 a{
@@ -95,6 +96,10 @@ a{
     margin-bottom: -20px;
     margin-top: -20px;
     margin-right: 630px;
+}
+
+#status{
+    color:red;
 }
 
 
