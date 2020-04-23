@@ -12,9 +12,11 @@ $(document).ready(function () {
 
       if(name.length>1){
         if (email.length > 5 && email.includes("@") && email.includes(".")) {
+            document.getElementById("confirm").value=""+email;
             if (subject.length > 2) {
                 if (message.length > 14) {
-
+                    alert("A copy of your message was sent to your email adress: "+email);
+                    alert("Thank you for your message.")  
                 }
                 else {
                     event.preventDefault()
